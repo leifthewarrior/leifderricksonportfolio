@@ -1,0 +1,357 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	display: border-box;
+	margin: 0 auto;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	background-image: linear-gradient(#f4f5f7 , #fff);
+		
+}
+
+h1,h2,h3,h4,h5,h6,ul,li, a {
+	text-align: center;
+	color: #212B3B;
+}
+
+p {
+	text-align: justify;
+}
+
+/********************************Mobile Response*********************************************/
+
+.header-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.social-media-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		background-color: #212B3B;
+	}
+	.social-icon {
+		align-content: center;
+	}
+	.social-icon > img {
+		width: 45px;
+		height: 45px;
+	}
+
+.social-icon > img:hover {
+	transform: scale(1.25,1.25);
+	transform-timing-function: ease-in;
+}
+
+.social-icon > img:active {
+	transform: scale(.75,.75);
+	transform-timing-function: ease-in;
+}
+.header-container > img {
+	width: 50px;
+	margin-top: 25px;
+}
+
+.header-container > h1 {
+	font-size: 2.25em;
+	color: #212B3B;
+	text-transform: uppercase;
+	border-bottom: 2px solid #212B3B;
+}
+
+.navigation-container {
+	margin-bottom: 50px;
+}
+
+	.main-navigation {
+	text-transform: uppercase;
+	width: 100%;
+	font-size: 1.1em;
+	color: #738192;
+	word-spacing: .5em;
+	margin-right: 5px;
+}
+
+	.main-navigation:hover {
+	color: #212B3B;
+	}
+	
+	.main-navigation:active {
+		color: #a59784;
+	}
+
+/*********************about****************************/
+
+.about-block-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 25px auto;
+}
+
+.about-block {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.about-block > img {
+	width: 200px;
+	height: 200px;
+	border: 5px solid #A59784;
+	box-shadow: 0px 3px 10px #738192;
+	vertical-align: middle;
+}
+
+.about {
+	vertical-align: middle;
+	width: 80%;
+}
+
+.about > h1 {
+	margin: 15px auto;
+}
+
+.about > p {
+	font-size: 1.1em;
+	margin-bottom: 15px;
+}
+
+/******experience*******/
+
+
+
+/***********This is the Mastr H2 setting**************/
+ h2 {
+	background-color: #212B3B;
+	color: white;
+	width: 98%;
+	margin: 15px auto;
+}
+/*********************************************************/
+
+
+
+.experience {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: 80%;
+	margin: 25px auto;
+}
+
+.experience > h3 {
+	width: 100%;
+	text-align: left;
+	text-transform: uppercase
+}
+
+.experience > ul {
+	line-height: 25px;
+	margin: 25px auto;
+}
+
+.experience > ul > li {
+	color: #738192;
+	text-align: justify;
+	margin: 10px auto;
+}
+
+/******education*******/
+
+.education {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 80%;
+}
+
+.education > p {
+	text-align: center;
+	font-weight: bolder;
+	color:#212B3B;
+	margin: 25px auto;
+}
+
+/******Skills*******/
+
+.skills {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: 50px auto;
+}
+
+.skills > .skills-left> ul > li,
+.skills > .skills-right> ul> li {
+	color: #212B3B;
+	text-align: left;
+	text-transform: uppercase;
+	margin: 10px auto;
+}
+
+.dot {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px solid #212B3B;
+}
+
+.fill {
+	background-color: #212B3B;
+}
+
+/******interest*******/
+
+.interest {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: 50px auto;
+}
+
+.interest > ul > li {
+	font-weight: bolder;
+	color: #212B3B;
+	text-align: left;
+	margin: 15px auto;
+	
+}
+
+
+
+	/******************Footer***********************/
+	
+	footer {
+	background-color: #212b3b;
+	height: 80px;
+	overflow: hidden
+}
+
+	h6 {
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 1.25em;
+	margin-top: 25px;
+}
+	h6 > img {
+		width: 25px;
+	}
+	
+	footer > p {
+		color: #738192;
+		text-align: center;
+		font-size: .75em;
+	}
+
+/********************************Tablet Large Phone*********************************************/
+
+@media only screen and (min-width: 600px) {
+	.about-block,
+	.experience,
+	.education,
+	.skills,
+	.interest {
+		width:75%;
+	}
+	
+	.about {
+		width:90%;
+	}
+	
+	.about-block > img {
+		width: 300px;
+		height: 300px;
+	}
+
+	
+}
+
+
+/********************************Desktop Response*********************************************/
+
+@media only screen and (min-width: 992px) {
+	
+	.social-media-container {
+		display: block;
+		position: fixed;
+		width: 50px;
+		background-color: transparent;
+		margin:  400px 0;
+		margin-left: 8px;
+	}
+
+	.header-container {
+		box-shadow: 0px 2px 5px #738192;
+	}
+	.about-block-container {
+		width: 90%;
+	}
+	.about-block {
+		margin: 50px auto;
+	}
+	
+	
+	.experience,
+	.education,
+	.skills,
+	.interest {
+		width: 70%;
+	}
+	
+	.about {
+		width:56%;
+	}
+	
+	.about > h1 {
+		text-align: left;
+	}
+	
+	.about > p {
+	margin-bottom: none;
+}
+	
+	.experience > h3 {
+		font-size: 1.5em;
+	}
+	
+	.experience > ul > li {
+		font-weight: 200;
+		font-size: 1.10em;
+	}
+	
+	.education > p {
+		font-size: 1.50em;
+	}
+	
+	.skills-left > ul > li,
+	.skills-right > ul > li {
+		font-size: 1.5em;
+		letter-spacing: .25em;
+	}
+	
+	.dot {
+		width: 15px;
+		height: 15px;
+	}
+	
+	.interest > ul {
+		font-size: 1.25em;
+	}
+
+
+
+}

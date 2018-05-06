@@ -1,0 +1,255 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	display: border-box;
+	margin: auto;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	list-style: none;
+	text-decoration: none;
+}
+
+/**************************************Mobile Responsive********************************************************/
+
+	.body-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		background-color: #DEE4E9;
+	}
+	
+	.social-media-container {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		background-color: #212B3B;
+		
+	}
+	.social-icon {
+		align-content: center;
+	}
+
+	.social-icon > img {
+		width: 45px;
+		height: 45px;
+	}
+
+.social-icon > img:hover {
+	transform: scale(1.25,1.25);
+	transform-timing-function: ease-in;
+}
+
+.social-icon > img:active {
+	transform: scale(.75,.75);
+	transform-timing-function: ease-in;
+}
+	
+	header {
+		border-top: 2px solid #212b3b;
+		border-bottom: 2px solid #212b3b;
+		margin-top: 25px;
+	}
+	
+	header h1 {
+		width: 100%;
+		font-size: 2.5em;
+		color: #212B3B;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.main-navigation {
+		font-size: 1.15em;
+		text-align: center;
+		text-transform: uppercase;
+		word-spacing: .5em;
+	}
+	
+	.main-navigation > a {
+	 	color: #738192;	
+	}
+
+.main-navigation > a:hover {
+	color: #212B3B;
+}
+	
+	.main-navigation > a:active {
+		color: #a59784;
+	}
+	
+	.mobile-profile-small {
+		width: 240px;
+		height: 240px;
+		border: 10px solid white;
+		margin-top: 50px;
+	}
+	.mobile-profile-large {
+		display: none;
+	}
+	
+	.body-paragraph {
+		width: 90%;
+		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+		font-size: 1.25em;
+		color: #212B3B;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 100px;
+	}
+	
+	/*******************Contact***************************/
+	
+	.contact-container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	.contact-info p {
+		font-size: 1.15em;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 30px;
+		margin-top: 25px;
+	}
+	
+	.contact-container > h2 {
+		font-size: 2em;
+		color: #212B3B;
+		margin-top: 50px;
+	}
+	
+	.contact {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+	}
+	
+	.contact-input {
+		width: 100%;
+		height: 40px;
+		border: 3px solid #212B3B;
+		border-radius: 2%;
+		margin-bottom: 5px;
+	}
+	
+	#subject {
+		width: 100%;
+		height: 160px;
+		border: 3px solid #212B3B;
+		border-radius: 1%;
+		margin-bottom: 5px;
+	}
+	
+	#button {
+		background-color: #212B3B;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		color: white;
+		padding: 15px;
+		border: none;
+		border-radius: 3%;
+		margin: 15px auto;
+	}
+	
+	#button:active {
+		transform: scale(.90, .90);
+	}
+	
+	/******************Footer***********************/
+	
+	footer {
+	background-color: #212b3b;
+	height: 80px;
+	overflow: hidden
+}
+
+h6 {
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 1.25em;
+	margin-top: 25px;
+}
+	h6 > img {
+		width: 25px;
+	}
+	
+	footer > p {
+		color: #738192;
+		text-align: center;
+		font-size: .75em;
+	}
+
+
+/******************************Portait Tablet large phone response*****************************************/
+
+@media only screen and (min-width: 600px) {
+
+
+	.mobile-profile-small {
+		display: none;
+	}
+	
+	.mobile-profile-large {
+		display: block;
+		width: 75%;
+		border: 10px solid white;
+		margin-top: 50px;
+	}
+	
+}
+
+/*****************************Responsive for Large Tablet to desktop************************************/
+
+@media only screen and (min-width: 992px) {
+	.mobile-profile-large {
+		display: none;
+	}
+	.body-container {
+	background-image: url(img/LeifDerrickson-Homepage-Background.jpg);
+	background-color: #DEE4E9;
+	background-size: cover;
+
+	}
+	
+	.social-media-container {
+		display: block;
+		position: fixed;
+		width: 50px;
+		background-color: transparent;
+		margin:  400px 0;
+		margin-left: 5px;
+	}
+	
+	
+	
+	header {
+
+		width: 350px;
+		margin-right: 8%;
+		margin-top: 400px;
+	}
+	
+	.body-paragraph {
+		width: 350px;
+		margin-top: 100px;
+		margin-right: 8%;
+		margin-bottom: 300px;
+	}
+	
+	.contact-container {
+		width: 800px;
+	}
+	
+	#subject {
+		height: 400px;
+	}
+	
+	
+	
+}
+
+
+
